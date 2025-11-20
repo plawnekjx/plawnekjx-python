@@ -1,46 +1,46 @@
 from typing import Any, Callable, Dict, List, Optional, Tuple, Union
 
 try:
-    from . import _frida
+    from . import _plawnekjx
 except Exception as ex:
     print("")
     print("***")
     if str(ex).startswith("No module named "):
-        print("Frida native extension not found")
+        print("Plawnekjx native extension not found")
         print("Please check your PYTHONPATH.")
     else:
-        print(f"Failed to load the Frida native extension: {ex}")
+        print(f"Failed to load the Plawnekjx native extension: {ex}")
         print("Please ensure that the extension was compiled correctly")
     print("***")
     print("")
     raise ex
 from . import core
 
-__version__: str = _frida.__version__
+__version__: str = _plawnekjx.__version__
 
 get_device_manager = core.get_device_manager
-Relay = _frida.Relay
+Relay = _plawnekjx.Relay
 PortalService = core.PortalService
 EndpointParameters = core.EndpointParameters
 Compiler = core.Compiler
 PackageManager = core.PackageManager
-FileMonitor = _frida.FileMonitor
+FileMonitor = _plawnekjx.FileMonitor
 Cancellable = core.Cancellable
 
-ServerNotRunningError = _frida.ServerNotRunningError
-ExecutableNotFoundError = _frida.ExecutableNotFoundError
-ExecutableNotSupportedError = _frida.ExecutableNotSupportedError
-ProcessNotFoundError = _frida.ProcessNotFoundError
-ProcessNotRespondingError = _frida.ProcessNotRespondingError
-InvalidArgumentError = _frida.InvalidArgumentError
-InvalidOperationError = _frida.InvalidOperationError
-PermissionDeniedError = _frida.PermissionDeniedError
-AddressInUseError = _frida.AddressInUseError
-TimedOutError = _frida.TimedOutError
-NotSupportedError = _frida.NotSupportedError
-ProtocolError = _frida.ProtocolError
-TransportError = _frida.TransportError
-OperationCancelledError = _frida.OperationCancelledError
+ServerNotRunningError = _plawnekjx.ServerNotRunningError
+ExecutableNotFoundError = _plawnekjx.ExecutableNotFoundError
+ExecutableNotSupportedError = _plawnekjx.ExecutableNotSupportedError
+ProcessNotFoundError = _plawnekjx.ProcessNotFoundError
+ProcessNotRespondingError = _plawnekjx.ProcessNotRespondingError
+InvalidArgumentError = _plawnekjx.InvalidArgumentError
+InvalidOperationError = _plawnekjx.InvalidOperationError
+PermissionDeniedError = _plawnekjx.PermissionDeniedError
+AddressInUseError = _plawnekjx.AddressInUseError
+TimedOutError = _plawnekjx.TimedOutError
+NotSupportedError = _plawnekjx.NotSupportedError
+ProtocolError = _plawnekjx.ProtocolError
+TransportError = _plawnekjx.TransportError
+OperationCancelledError = _plawnekjx.OperationCancelledError
 
 
 def query_system_parameters() -> Dict[str, Any]:

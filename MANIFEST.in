@@ -1,9 +1,9 @@
 include meson.build
-include frida/meson.build
-include frida/_frida/extension.c
-include frida/_frida/extension.version
-include frida/_frida/meson.build
-include subprojects/frida-core.wrap
+include plawnekjx/meson.build
+include plawnekjx/_plawnekjx/extension.c
+include plawnekjx/_plawnekjx/extension.version
+include plawnekjx/_plawnekjx/meson.build
+include subprojects/plawnekjx-core.wrap
 
 include BSDmakefile
 include Makefile

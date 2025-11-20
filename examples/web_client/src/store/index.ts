@@ -1,16 +1,16 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 
-import frida from './modules/frida';
-import fridaBus from './plugins/frida';
+import plawnekjx from './modules/plawnekjx';
+import plawnekjxBus from './plugins/plawnekjx';
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
   modules: {
-    frida
+    plawnekjx
   },
   plugins: [
-    fridaBus()
+    plawnekjxBus()
   ]
 });

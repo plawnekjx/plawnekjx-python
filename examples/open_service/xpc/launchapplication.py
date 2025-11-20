@@ -2,11 +2,11 @@ import pprint
 import sys
 from threading import Thread
 
-import frida
+import plawnekjx
 
 
 def main():
-    device = frida.get_usb_device()
+    device = plawnekjx.get_usb_device()
 
     stdout_uuid, stdout_stream = create_stdio_socket(device)
     stderr_uuid, stderr_stream = create_stdio_socket(device)

@@ -1,4 +1,4 @@
-import frida
+import plawnekjx
 
-device = frida.get_usb_device()
+device = plawnekjx.get_usb_device()
 device.unpair()

@@ -1,6 +1,6 @@
-import frida
+import plawnekjx
 
-session = frida.attach("Twitter")
+session = plawnekjx.attach("Twitter")
 script = session.create_script(
     """\
 rpc.exports = {

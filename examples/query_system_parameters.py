@@ -4,10 +4,10 @@ from pygments import highlight
 from pygments.formatters import Terminal256Formatter
 from pygments.lexers import PythonLexer
 
-import frida
+import plawnekjx
 
-print("Local parameters:", highlight(pformat(frida.query_system_parameters()), PythonLexer(), Terminal256Formatter()))
+print("Local parameters:", highlight(pformat(plawnekjx.query_system_parameters()), PythonLexer(), Terminal256Formatter()))
 print(
     "USB device parameters:",
-    highlight(pformat(frida.get_usb_device().query_system_parameters()), PythonLexer(), Terminal256Formatter()),
+    highlight(pformat(plawnekjx.get_usb_device().query_system_parameters()), PythonLexer(), Terminal256Formatter()),
 )
